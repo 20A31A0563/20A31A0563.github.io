@@ -3,6 +3,9 @@
 if (localStorage.getItem("login") === null) {
     window.location.href = "index.html";
 }
+else {
+    window.location.href = "todo.html";
+}
 todolist = JSON.parse(localStorage.getItem("todos"));
 if (todolist === null) {
     todolist = []
