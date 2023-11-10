@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Todo Website</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logodiv">
+            <img class="logo" src="logo_img.png" />
+            <h1>Todo App</h1>
+        </div>
+        <div class="logindiv">
+            <a href="#"><h3>Tips</h3></a>
+            <a href="#"><h3>About us</h3></a>
+            <a id="logout"><h3>Logout</h3></a>
+            <div id="usericon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="todoblock">
+        <div class="tododiv">
+            <h1>To do list</h1>
+            <input id="inputask" type="text" placeholder="Enter your task">
+
+            <button id="add" onclick="addtask()">Add</button>
+            <ul id="todolist">
+
+                <!--<li>
+                    <input type="checkbox" class="checkboxe" name="checkboxes" value="Watch JS lectures" onchange= "checktasks()">
+                    <p class="taskname">Have toBrush </p>
+
+
+
+                </li>
+                <li >
+                    <input type="checkbox" class="checkboxe"  name="checkboxes"  value="Watch JS lectures" onchange= "checktasks()" >
+                    <p class="taskname">Have toBrush</p>
+
+                </li>
+                <li>
+                    <input type="checkbox" class="checkboxe"name="checkboxes"  value="Watch JS lectures" onchange= "checktasks()">
+                    <p class="taskname">Have toBrush</p>
+
+                </li>-->
+
+            </ul>
+
+
+
+
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="logoutscript.js"></script>
+</body>
+</html>

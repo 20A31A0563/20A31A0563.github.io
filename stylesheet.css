@@ -1,0 +1,285 @@
+﻿*{|
+      
+      padding:0;
+      margin:0;
+      font-family:Arial;
+}
+/*Home Page*/
+body {
+    background-color: #FACBEA;  
+}
+.navbar {
+    height: 60px;
+    background-color: #B0578D;
+    display: flex;
+    padding-top: 5px;
+    padding-left:8px;
+    align-items: center;
+    color:white;
+    width:100%;
+    
+}
+.logo {
+    object-fit: contain;
+    height: 40px;
+
+}
+.logindiv{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width:60%;
+    padding-left:42%;
+    
+}
+.logodiv {
+    display: flex;
+    
+    align-items: center;
+    width: 40%;
+}
+.logindiv a {
+    text-decoration: none;
+    text-decoration-color: white;
+    color:inherit;
+}
+a {
+    color:black;
+}
+    a:hover {
+        cursor: pointer;
+    }
+button:hover {
+    cursor: pointer;
+}
+.logindiv a:hover {
+    cursor: pointer;
+}
+
+#usericon{
+    background-color:white;
+    color:black;
+    height:50px;
+    width:50px;
+    display:flex;
+    align-items:center;
+    border-radius:100%;
+    justify-content:center;
+    
+}
+.Homepage{
+    display:flex;
+    padding-top:6%;
+}
+.Homepagetext
+{
+    padding-top:8%;
+    width:50%;
+    padding-left:5%;
+}
+.todo_image{
+    
+    width:50%;
+}
+.Homepagetext h1 {
+    color: #000000;
+}
+.Singupbutton {
+    height: 35px;
+    width: 350px;
+    border-radius: 2%;
+    background-color: #dd7973;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+    margin-left:6%;
+}
+button{
+    border:none;
+    padding:0;
+    background:none;
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+}
+.Homepage  p{
+    margin-left : 30%;
+    margin-top:2%;
+}
+.Signuppagetext {
+    width: 50%;
+    padding-top:2%;
+}
+
+/*Registration Page*/
+.registerform {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin-left: 20%;
+    border-radius:5%;
+    padding-left:5%;
+    padding-top:2%;
+    
+}
+.registerform input{
+    margin-left:4px;
+    border:none;
+    border-bottom: 1px solid black;
+    width:250px;
+    height:50px;
+}
+.registerform button{
+    border:none;
+    height:50px;
+    width:150px;
+    background-color:indianred;
+    color:white;
+    margin-top:2%;
+    margin-left:20%;
+}
+.registerform button:hover {
+    cursor: pointer;
+    background-color: lightslategray;
+}
+/*Login Page*/
+.loginform {
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin-left: 20%;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-top:3%;
+}
+.loginform input {
+    margin-left: 4px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 250px;
+    height: 50px;
+}
+.loginform button {
+    border: none;
+    height: 50px;
+    width: 150px;
+    background-color: indianred;
+    color: white;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+.loginform button:hover {
+    cursor: pointer;
+    background-color: lightslategray;
+}
+/*Todo Page*/
+.todoblock{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.tododiv {
+    width: 600px;
+    height: 500px;
+    border: 5px solid #0B0B45;
+    border-radius: 5px;
+    margin-top: 6%;
+    background-color: white;
+    
+}
+    .tododiv h1 {
+        padding-left: 5px;
+        padding-top: 3px;
+        color: #0B0B45;
+    }
+#inputask {/*input taking tag*/
+    width: 450px;
+    height:40px;
+    margin-left: 5%;
+    margin-top:3%;
+    border-radius:10px;
+    border: 4px solid indianred;
+    margin-bottom:3%;
+
+}
+#add {/*add button*/
+    color: white;
+
+    background-color: #E94848;
+    height: 47px;
+    width: 60px;
+    border-radius:10px;
+}
+#add:hover{
+    cursor:pointer;
+}
+.checkboxe {/*check box*/
+    border: 1px solid black;
+    color: black;
+    height: 20px;
+    width: 50px;
+    margin-top: 4px;
+    
+}
+li p {
+    margin-top: 4px;
+    width:420px;
+    padding-left:3px;
+}
+li {
+    background-color: #d3d3d3;
+    height: 30px;
+    width: 450px;
+    padding-top: 4px;
+    display:flex;
+    border:1px solid grey;
+    border-radius:5px;
+    margin-bottom:4px;
+}
+ul {
+    list-style-type: none;
+}
+ul li:nth-child(even) {
+    background: #f9f9f9;
+}
+ul li:hover {
+    background: #ddd;
+}
+.taskname{
+    padding-right: 270px;
+}
+li.checked p{
+        background: #888;
+        color: #fff;
+        text-decoration: line-through;
+    }
+
+ul li.checked {
+        background: #888;
+        
+    }
+    
+li .close {
+        height: 30px;
+        width: 30px;
+        font-size: 30px;
+        
+    }
+.close:hover{
+    cursor:pointer;
+}
+.checkboxe:hover {
+    cursor: pointer;
+}
+.tododiv {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#add:hover {
+    cursor: pointer;
+    background-color: lightslategray;
+}
