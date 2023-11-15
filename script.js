@@ -1,18 +1,24 @@
-/* function to chnage status of completion or incompletion */
-windows.onload = function () {
-if (localStorage.getItem("login") === null) {
-    window.location.href = "index.html";
-}
-else {
-    window.location.href = "todo.html";
-}
+var login = [...document.querySelectorAll(".loginclick")];
+login.forEach(function (item) {
+    item.addEventListener('click', function () {
+        if (localStorage.getItem("login") === null) {
+            window.location.href = "login.html";
+        }
+        else {
+
+            window.location.href = "todo.html";
+        }
+
+    });
+
+});
+
 todolist = JSON.parse(localStorage.getItem("todos"));
 if (todolist === null) {
     todolist = []
 }
 else {
     loadtask();
-}
 }
 function loadtask() {
 
@@ -163,4 +169,3 @@ function addtask() {
     
 
 }
-
