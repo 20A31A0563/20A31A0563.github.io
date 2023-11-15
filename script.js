@@ -1,5 +1,5 @@
 /* function to chnage status of completion or incompletion */
-
+windows.onload = function () {
 if (localStorage.getItem("login") === null) {
     window.location.href = "index.html";
 }
@@ -12,6 +12,7 @@ if (todolist === null) {
 }
 else {
     loadtask();
+}
 }
 function loadtask() {
 
