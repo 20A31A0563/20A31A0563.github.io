@@ -25,8 +25,7 @@ regbutton.onclick = function () {
         localStorage.setItem("userdetails", JSON.stringify(userdetails));
         localStorage.setItem("login", true);
         localStorage.removeItem("todos");
-        //window.open("todo.html", "_blank");
-        location.href = 'todo.html'
-
+        window.open("todo.html", "_blank");
+        
     }
 }
